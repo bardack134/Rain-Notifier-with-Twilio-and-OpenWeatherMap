@@ -2,6 +2,7 @@
 
 The code is designed to check if it will rain in a specific location and send an SMS notification using the Twilio API if rain is expected.
 
+
 **Tools**
 
 -The code queries the **OpenWeatherMap (OWM) API** to get  weather forecast data for a given latitude and longitude.
