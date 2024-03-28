@@ -9,5 +9,5 @@ The code is designed to check if it will rain in a specific location and send an
 
 -If rain is expected, it sends an SMS using **the Twilio API** to remind the recipient to bring an umbrella.
 
--**api_key, twilio account id **
+-**api_key**, **twilio account id**
 
