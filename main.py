@@ -32,4 +32,37 @@ print(response.raise_for_status())
 json_response=response.json()
 
 
-print(json_response)
+#list donde se guardaran los weather id
+weather_id_list=[]
+
+
+#TODO:CHEQUIAAR LA CONDICION DEL CLIMA PARA LAS SGTS HORAS DEL DIA
+#weather_list es una lista de diccionarios
+weather_list=json_response["list"]
+
+
+#itirenamos sobre la lista de diccionarios
+for item in weather_list:
+    # print(item)
+    #item viene siendo cada diccionario de la lista de diccionarios, accedemos al valor 'weather' de cada diccionario y lo guardamos en una variable
+    # print(type(item['weather']))
+    item_weather=item['weather']
+    # print(item_weather)
+    
+    
+    #item weather es una lista de diccionarios, itirenamos sobre esta segunda lista
+    for item_2 in item_weather:
+        
+        #item_2 representa un diccionario de la lista de diccionarios, accedemos al valor 'id', que es el que nos interesa 
+        weather_id=item_2['id']
+        
+        #agregamos el valor a la lista weather_id_list
+        weather_id_list.append(weather_id)
+    
+print(weather_id_list)
+   
+
+
+
+       
+    
