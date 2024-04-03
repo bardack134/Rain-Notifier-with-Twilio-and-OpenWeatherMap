@@ -11,3 +11,4 @@ The code is designed to check if it will rain in a specific location and send an
 
 -**api_key**, **twilio account id**
 
+![app img](https://github.com/bardack134/Rain-Notifier-with-Twilio-and-OpenWeatherMap/assets/142977989/e0c8a240-7e29-4b67-87c6-78fa016449d1)
