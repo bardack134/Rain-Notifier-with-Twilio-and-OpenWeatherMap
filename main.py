@@ -74,23 +74,23 @@ print(weather_id_list)
 #NOTE:(https://openweathermap.org/weather-conditions), mirando la api documentation, encontramos que todos los 'id' menos a 600 representan lluvia
 
 
-#itirenamos sobre nuestra 'weather_id_list' para comparar nuestros id si son menores o mayores a 600
-# will_rain=False
-# for id in weather_id_list:
-#     if id<600:
-#         will_rain=True     
+# itirenamos sobre nuestra 'weather_id_list' para comparar nuestros id si son menores o mayores a 600
+will_rain=False
+for id in weather_id_list:
+    if id<700:
+        will_rain=True     
 
-# if will_rain==True:
-#     #codigo sacado de la documentacion de twilio
-#     # https://www.twilio.com/docs/messaging/tutorials/how-to-send-sms-messages/python#send-an-sms-message-in-python-via-the-rest-api
-#     client = Client(account_sid, auth_token)
+if will_rain==True:
+    #codigo sacado de la documentacion de twilio
+    # https://www.twilio.com/docs/messaging/tutorials/how-to-send-sms-messages/python#send-an-sms-message-in-python-via-the-rest-api
+    client = Client(account_sid, auth_token)
 
     
-#     message = client.messages \
-#         .create(
-#             body='It is going to rain today. Remember to bring an umbrella',
-#             from_='+14243560102',
-#             to=MY_NUMBER
-#         )
+    message = client.messages \
+        .create(
+            body='It is going to rain today. Remember to bring an umbrella',
+            from_='+14243560102',
+            to=MY_NUMBER
+        )
 
-#     print(message.status)
+    print(message.status)
