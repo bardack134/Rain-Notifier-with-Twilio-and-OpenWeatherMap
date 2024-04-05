@@ -5,9 +5,9 @@ The code is designed to check if it will rain in a specific location and send an
 
 **Tools**
 
-- **OpenWeatherMap (OWM) API** to get  weather forecast data for a given latitude and longitude.
+- **OpenWeatherMap (OWM) API** to get  weather forecast data for a given latitude and longitude. (https://openweathermap.org/api)
 
--If rain is expected, it sends an SMS using **the Twilio API** to remind the recipient to bring an umbrella.
+-**the Twilio API: ** If rain is expected, it sends an SMS using *the Twilio API* to remind the recipient to bring an umbrella. (https://www.twilio.com/docs/messaging/quickstart/python)
 
 -**api_key**
 
