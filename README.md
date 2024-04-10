@@ -13,10 +13,10 @@ The Rain-Notifier-with-Twilio-and-OpenWeatherMap is a Python application that ch
 
 ## Tools Used
 - **Requests:** A Python library used to send HTTP requests, allowing the program to interact with web APIs to search data.
-- **Twilio:** A platform that lets you send text messages to your cellphone from your apps using APIs. More information can be found at Twilio's official documentation.
+- **Twilio:** A platform that lets you send text messages to your cellphone from your apps using APIs. More information can be found at https://www.twilio.com/docs/messaging/quickstart/python
 
 ## APIs Used
-- **OpenWeatherMap (OWM) API:** Used to get weather forecast data for a given latitude and longitude. More information can be found at OpenWeatherMap API's official documentation.
+- **OpenWeatherMap (OWM) API:** Used to get weather forecast data for a given latitude and longitude. More information can be found at https://openweathermap.org/api
 
 ## Screenshots
 
